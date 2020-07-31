@@ -1,0 +1,37 @@
+<div [ngStyle]="{
+    'width': '200px',
+    'margin': '30px'
+}">
+    <div [ngClass]="['d-flex','justify-content-center']">
+        <img alt="" [src]="item.imageUrl" [ngStyle]="{'width': '120px', 'height': '120px'}">
+    </div>
+    <div>
+        <h5>{{ item.name }}: {{ item.price }} $</h5>
+    </div>
+    <div [ngClass]="['d-flex', 'justify-content-between']">
+        <button
+            (click)="descToCart()"
+            [ngClass]="[
+                'btn',
+                'btn-primary'
+            ]"
+            [ngStyle]="{'width': '50px'}">
+            -
+        </button>
+        <div
+            class="d-flex justify-content-center align-items-center">
+            {{ numberInCart}}
+        </div>
+        <button
+            (click)="incrToCart()"
+            [ngClass]="[
+                'btn',
+                'btn-primary'
+            ]"
+            [ngStyle]="{
+                'width': '50px'
+            }">
+            +
+        </button>
+    </div>
+</div>

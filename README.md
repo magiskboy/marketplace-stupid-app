@@ -1,3 +1,5 @@
+[![GithubCI](https://github.com/magiskboy/marketplace-stupid-app/workflows/ci/badge.svg)](https://github.com/magiskboy/marketplace-stupid-app/actions?query=workflow%3ACI)
+
 # Marketplace
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
