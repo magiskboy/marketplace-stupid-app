@@ -14,7 +14,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
-        run: ng build --prod --output-path=public
+        run: |
+          export PATH=$(npm bin):$PATH
+          ng build --prod --output-path=public
   deploy:
     name: Deploy
     needs: build
